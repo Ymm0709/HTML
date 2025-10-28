@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鲁本·阿莫林 - 个人简历</title>
+  <style>
+    :root {
+      --accent: #0b74de;
+      --bg: #f6f8fa;
+      --card: #ffffff;
+      --muted: #6b7280;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #111;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* 上半部分 */
+    .top-half {
+      display: flex;
+      flex: 1;
+      background: var(--card);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 20px;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .top-left, .top-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .top-left {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      background: #e9eef5;
+      border-radius: 12px;
+      padding: 10px;
+    }
+
+    .photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(11,116,222,0.15);
+    }
+
+    .top-right {
+      flex: 1.5;
+      padding: 10px;
+    }
+
+    .info, .brief, .experience, .skills {
+      background: #fbfdff;
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    .meta, .hobbies { color: var(--muted); margin-bottom: 8px; }
+    .brief p { margin: 0; line-height: 1.6; }
+
+    .section h3 { margin: 0 0 8px 0; font-size: 18px; color: var(--accent); }
+
+    .experience-item { margin-bottom: 10px; }
+    .job-title { font-weight: 600; }
+    .job-meta { color: var(--muted); font-size: 13px; margin-bottom: 4px; }
+    .job-desc { font-size: 14px; line-height: 1.5; }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill {
+      background: #eef6ff;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* 下半部分 */
+    .bottom-half {
+      flex: 1;
+      background: var(--card);
+      margin: 0 20px 20px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      padding: 30px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .bottom-half h2 {
+      font-size: 20px;
+      color: var(--accent);
+      border-bottom: 2px solid #d9e3f0;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 800px) {
+      .top-half { flex-direction: column; height: auto; }
+      .photo { width: 180px; height: 180px; margin: 0 auto; }
+      .top-left, .top-right { flex: unset; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 上半部分 -->
+    <div class="top-half">
+      <div class="top-left">
+        <img src="/static/ruben_amorim.jpg" alt="鲁本·阿莫林" class="photo">
+      </div>
+
+      <div class="top-right">
+        <div class="info">
+          <div class="name">鲁本·阿莫林 (Rúben Amorim)</div>
+          <div class="meta">年龄：39 | 国籍：葡萄牙</div>
+          <div class="hobbies">爱好：战术研究 / 足球分析 / 教练培训</div>
+        </div>
+
+        <div class="brief">
+          <h3>Brief</h3>
+          <p>鲁本·阿莫林是一名葡萄牙足球教练和前职业球员，以创新战术、领导力和年轻化理念闻名。他执教风格现代，强调团队协作与高压逼抢。</p>
+        </div>
+
+        <div class="experience">
+          <h3>Experience</h3>
+          <div class="experience-item">
+            <div class="job-title">利物浦足球俱乐部 主教练</div>
+            <div class="job-meta">2024 — 至今</div>
+            <div class="job-desc">带领球队重塑战术体系，融合高压与控球思维，激发年轻球员潜力。</div>
+          </div>
+          <div class="experience-item">
+            <div class="job-title">葡萄牙体育 主教练</div>
+            <div class="job-meta">2020 — 2024</div>
+            <div class="job-desc">率队赢得葡超冠军与国内杯赛，打造现代化进攻体系。</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skills-list">
+            <div class="skill">战术规划</div>
+            <div class="skill">团队管理</div>
+            <div class="skill">球员培养</div>
+            <div class="skill">数据分析</div>
+            <div class="skill">沟通协调</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 下半部分 -->
+    <div class="bottom-half">
+      <section>
+        <h2>教育经历</h2>
+        <div class="experience-item">
+          <div class="job-title">葡萄牙足球协会教练学院</div>
+          <div class="job-meta">2017 — 2019</div>
+          <div class="job-desc">完成 UEFA Pro 教练执照课程，系统学习战术、心理与领导力培训。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>职业生涯</h2>
+        <div class="experience-item">
+          <div class="job-title">本菲卡 / 布拉加 球员生涯</div>
+          <div class="job-meta">2003 — 2017</div>
+          <div class="job-desc">司职中场，代表葡萄牙国家队出场 14 次，以稳定的控球与拼抢能力著称。</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>联系方式</h2>
+        <p>邮箱：ruben.amorim@football.pt · Instagram：@rubenamorimofficial</p>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>
